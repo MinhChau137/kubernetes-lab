@@ -139,7 +139,7 @@ spec:
         - --metric-resolution=15s
         command:
         - /metrics-server
-        - --kubelet-insecure-tls
+        - --kubelet-insecure-tls=true
         image: k8s.gcr.io/metrics-server/metrics-server:v0.6.1
         imagePullPolicy: IfNotPresent
         livenessProbe:
